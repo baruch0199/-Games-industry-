@@ -1,0 +1,89 @@
+.playstation-section {
+  background: $radialBlackAndWhiteBg;
+  border-radius: 5px;
+  padding: 30px;
+  height: 450px;
+
+  .playstation-section-content {
+    height: 420px;
+
+    position: relative;
+    .playstation-image-content {
+      .playstation-image {
+        width: 100%;
+
+        border-radius: 5px;
+      }
+    }
+    .playstation-text-content {
+      color: white;
+      padding: 20px;
+
+      .playstation-title {
+        font-size: clamp(14px, 0.8vw, 20px);
+      }
+      .playstation-paragraph-content {
+        display: inline;
+        font-size: clamp(11px, 0.6vw, 11px);
+        color: rgb(218, 218, 218);
+      }
+      .playstation-more-button {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $azure;
+        color: $azure;
+        margin-left: 15px;
+        padding: 0;
+      }
+      .playstation-button-and-price-wrapper {
+        .playstation-button-and-price {
+          position: absolute;
+          bottom: 40px;
+          left: 0;
+          padding: 0 20px;
+          display: flex;
+          align-items: center;
+
+          .playstation-button {
+            @extend .button, .shaddow;
+          }
+          .playstation-price {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .playstation-bg-edit-delete-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.412);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px 6px 30px 0;
+    border: 0.5px solid black;
+
+    .playstation-edit-delete-tools {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .playstation-edit {
+        background: none;
+        border: 0;
+      }
+      .playstation-trash {
+        @extend .admin-trash;
+      }
+      .playstation-pencil,
+      .playstation-trash {
+        color: black;
+        margin: 10px;
+      }
+    }
+  }
+}

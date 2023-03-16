@@ -1,0 +1,16 @@
+@local=http://localhost:9000
+
+@token=
+
+
+/// sign up admin
+###
+POST {{local}}/sign-up/registration
+content-type: application/json
+
+{
+    "name":"baruch0199",
+    "email":"baruch0199@gmail.com",
+    "password":"1!Aasdfg",
+    "admin": true
+}

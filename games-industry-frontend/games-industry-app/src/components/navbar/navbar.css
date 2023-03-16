@@ -1,0 +1,20 @@
+.transition {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-position {
+  position: fixed !important;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-color {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-background-color {
+  background-color: inherit !important;
+  border: 0 !important;
+}
+/*# sourceMappingURL=navbar.css.map */

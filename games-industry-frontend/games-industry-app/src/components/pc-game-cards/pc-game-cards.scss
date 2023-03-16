@@ -1,0 +1,238 @@
+.title-pc-games {
+  color: white;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.pc-section-content {
+  width: 100%;
+  color: white;
+
+  .pc-background {
+    @extend .shaddow;
+    @include position(absolute, 0, 0);
+    background-image: $radialBlackAndWhiteBg;
+    height: 50%;
+    width: inherit;
+    border-radius: 0px 90px 7px 7px;
+    display: flex;
+
+    .pc-text-content {
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      width: 83%;
+      line-height: 17px;
+    }
+
+    .overflow {
+      height: 70px;
+      overflow: hidden;
+    }
+
+    .pc-paragraph-content {
+      font-size: clamp(11px, 0.7vw, 15px);
+      color: rgb(224, 224, 224);
+      padding: 0 4px;
+      display: inline;
+      padding: 0;
+    }
+    .pc-text-title {
+      font-size: clamp(11px, 0.8vw, 20px);
+    }
+
+    .pc-more-button {
+      text-decoration: none;
+      color: $azure;
+      margin-left: 7px;
+      font-size: 1rem;
+      background: transparent;
+      border: none;
+      .pc-more {
+        border-bottom: 1px solid $azure;
+      }
+    }
+
+    .pc-button {
+      @extend .button, .shaddow;
+      @include position(absolute, 15px, 14px);
+    }
+
+    .pc-product-price {
+      @include position(absolute, 23px, 55%);
+    }
+  }
+
+  .pc-content {
+    position: relative;
+    background-color: #191919;
+
+    .pc-bg-edit-delete-tools {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 50px;
+      width: 100px;
+      background-color: rgba(255, 255, 255, 0.412);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 30px 6px 30px 0;
+      border: 0.5px solid black;
+
+      .pc-edit-delete-tools {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .pc-edit {
+          background: none;
+          border: 0;
+        }
+        .pc-trash {
+          @extend .admin-trash;
+        }
+        .pc-pencil,
+        .pc-trash {
+          color: black;
+          margin: 10px;
+        }
+      }
+    }
+  }
+
+  .pc-height {
+    height: clamp(25px, 22vw, 420px);
+  }
+
+  .pc-height .img {
+    @extend .shaddow;
+  }
+
+  .pc-image {
+    position: relative;
+    width: inherit;
+    border-radius: 7px 7px 0px 0px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  html {
+    .pc-height {
+      height: clamp(25px, 21vw, 420px) !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1301px) {
+  html {
+    font-size: 87.5%; // 1rem = 15px
+
+    .pc-paragraph-content {
+      line-height: 20px;
+    }
+    .pc-text-title {
+      font-size: clamp(14px, 0.8vw, 20px) !important;
+    }
+  }
+
+  .pc-height {
+    height: clamp(25px, 33vw, 420px) !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .pc-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .pc-background {
+    height: 20vw !important;
+  }
+
+  .pc-height {
+    height: 44vw !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .pc-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .pc-background {
+    height: 30vw !important;
+  }
+
+  .pc-height {
+    height: 53vw !important;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .pc-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .pc-background {
+    height: 32vw !important;
+  }
+
+  .pc-height {
+    height: 75vw !important;
+  }
+
+  //   .pc-bg-edit-delete-tools {
+  //     .pc-pencil,
+  //     .pc-trash {
+  //     }
+  //   }
+}
+
+@media only screen and (max-width: 499px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .pc-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .pc-background {
+    height: 42vw !important;
+  }
+
+  .pc-height {
+    height: 87vw !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .pc-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .pc-background {
+    height: 80vw !important;
+  }
+
+  .pc-height {
+    height: 52vh !important;
+  }
+}

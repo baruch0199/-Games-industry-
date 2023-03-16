@@ -1,0 +1,354 @@
+//sign up
+.sign-up-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  height: 800px;
+  margin: 0 100px;
+  .sign-up-conroller {
+    color: rgba(0, 0, 0, 0.185);
+    background-image: $radialBlackAndWhiteBg;
+    background-clip: text;
+
+    font-size: 480px;
+    transform: rotateZ(-50deg);
+    clip-path: inset(27% 0 24% 0);
+    margin-bottom: 80px;
+  }
+  .sign-up-background {
+    margin: 0 50px;
+
+    background-image: $radialBlackAndWhiteBg;
+    width: 470px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    .sign-up-title {
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sign-up-email-password-checkbox-fullname {
+      .sign-up-fullname-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        .sign-up-person {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/person_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+        .sign-up-fullname {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+      }
+
+      .sign-up-email-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .sign-up-mail {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/mail_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-up-email {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+      }
+
+      .sign-up-password-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .sign-up-visible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+          z-index: 20;
+        }
+
+        .sign-up-invisible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_off_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+        .sign-up-same-password-visible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/same_password_visibility_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+          z-index: 20;
+        }
+
+        .sign-up-same-password-invisible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/same_password_visibility_off_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+        .sign-up-key {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/key_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-up-password {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .sign-up-password-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .sign-up-visible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+          z-index: 20;
+        }
+
+        .sign-up-invisible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_off_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+
+        .sign-up-key {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/key_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-up-password {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+      .sign-up-same-password-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        .sign-up-same-password-visible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/same_password_visibility_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+          z-index: 20;
+        }
+
+        .sign-up-same-password-invisible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/same_password_visibility_off_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+        .sign-up-key {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/key_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-up-password {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .sign-up-check-box-wraper {
+        display: flex;
+        .sign-checkbox {
+        }
+
+        .sign-up-remember-me {
+          display: inline-block;
+          padding: 0 12px;
+          color: #dadada;
+        }
+      }
+    }
+    .sign-up-submit-wraper {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      .sign-up-submit {
+        @extend .shaddow;
+        @extend .button;
+        padding: 5px 20px;
+      }
+    }
+    .sign-up-forgot-passord-wraper {
+      .sign-up-forgot-passord {
+        color: $azure;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .sign-up-section {
+    margin: 0 350px !important;
+    .sign-up-background {
+    }
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .sign-up-section {
+    margin: 0;
+
+    .sign-up-conroller {
+      font-size: 400px !important;
+    }
+    .sign-up-background {
+      height: 450px !important;
+
+      width: 450px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .sign-up-section {
+    margin: 0 !important;
+    width: 100%;
+    justify-content: center !important;
+    padding: 0 !important;
+    .sign-up-conroller {
+      display: none;
+    }
+    .sign-in-background {
+      width: 350px !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sign-up-section {
+    margin: 0 !important;
+    justify-content: center;
+
+    .sign-up-background {
+      width: 420px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .sign-up-section {
+    .sign-up-background {
+      width: 230px !important;
+    }
+  }
+}

@@ -1,0 +1,191 @@
+//sign in
+.sign-in-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 700px;
+  margin: 0 100px;
+  .sign-in-conroller {
+    color: rgba(0, 120, 144, 0.185);
+    background-image: $radialBlackAndWhiteBg;
+    background-clip: text;
+    flex-wrap: wrap;
+    font-size: 500px;
+    transform: rotateZ(-50deg);
+    clip-path: inset(27% 0 24% 0);
+    margin-bottom: 80px;
+  }
+  .sign-in-background {
+    margin: 0 50px;
+    background-image: $radialBlackAndWhiteBg;
+
+    width: 35%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    .sign-in-title {
+      color: rgb(6, 144, 157);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sign-in-email-password-checkbox {
+      .sign-in-email-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .sign-in-mail {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/mail_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-in-email {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+      }
+
+      .sign-in-password-wraper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        .sign-in-visible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+          z-index: 20;
+        }
+
+        .sign-in-invisible-eye {
+          position: absolute;
+          top: 3px;
+          right: 0;
+          background-image: url("../../icons/visibility_off_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+          cursor: pointer;
+        }
+        .sign-in-key {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          background-image: url("../../icons/key_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: cover;
+          height: 15px;
+          width: 15px;
+        }
+
+        .sign-in-password {
+          flex: 1 1 100%;
+          background: transparent;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 0 25px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .sign-in-submit-wraper {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+      .sign-in-submit {
+        @extend .shaddow;
+        @extend .button;
+        padding: 5px 20px;
+      }
+    }
+    .sign-in-forgot-passord-wraper {
+      .sign-in-forgot-passord {
+        color: $azure;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .sign-in-section {
+    margin: 0 300px !important;
+    .sign-in-background {
+      width: 35% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .sign-in-section {
+    margin: 0 70px;
+
+    .sign-in-conroller {
+      font-size: 340px !important;
+    }
+    .sign-in-background {
+      height: 350px !important;
+
+      width: 40% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .sign-in-section {
+    margin: 0 !important;
+    justify-content: center;
+    .sign-in-conroller {
+      display: none;
+    }
+    .sign-in-background {
+      width: 45% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sign-in-section {
+    margin: 0 !important;
+    justify-content: center;
+    .sign-in-conroller {
+      display: none;
+    }
+    .sign-in-background {
+      width: 80% !important;
+      height: 420px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .sign-in-section {
+    .sign-in-background {
+      height: 280px !important;
+    }
+  }
+}

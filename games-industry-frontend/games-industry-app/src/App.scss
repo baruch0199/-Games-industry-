@@ -1,0 +1,78 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+//// colors
+$azure: rgb(68, 204, 250);
+
+////////
+$radialBlackAndWhiteBg: radial-gradient(black, rgba(255, 255, 255, 0.1));
+///////
+$custom-games-colors: (
+  "dark-bright": #191919,
+  "turquoise": rgb(0, 79, 107),
+  "azure": rgb(68, 204, 250),
+  "dark-transparent": rgba(0, 0, 0, 0.1),
+);
+
+$theme-colors: map-merge($custom-games-colors, $theme-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "./swiper.scss";
+@import "./extend.scss";
+@import "./mixin.scss";
+
+body {
+  background-color: #191919 !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif !important;
+  letter-spacing: 0.5px;
+}
+
+html {
+  font-size: 81.25%; // 1rem = 13px
+}
+
+.nav {
+  .line-hight {
+    line-height: 0;
+  }
+
+  .Controller {
+    font-size: 3rem;
+    margin-right: 10px;
+  }
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .loading-icon {
+    color: $azure;
+    height: 50px;
+    width: 50px;
+  }
+  .loading-text {
+    color: #c1c1c1;
+    font-size: 25px;
+    margin-left: 12px;
+  }
+}
+
+@import "./components/ios-game-cards/ios-game-cards.scss";
+@import "./components/android-game-cards/android-game-cards.scss";
+@import "./components/playstation-game-cards/playstation-game-cards.scss";
+@import "./components/pc-game-cards/pc-game-cards.scss";
+
+@import "./components/cart/cart.scss";
+@import "./components/hero/hero.scss";
+@import "./components/hero-games/hero-games.scss";
+@import "./components/footer/footer-nav.scss";
+@import "./components/about/about.scss";
+@import "./components/sign-up/sign-up.scss";
+@import "./components/sign-in/sign-in.scss";
+@import "./components/reset-password/reset-password.scss";
+@import "./components/new-password/new-password.scss";
+@import "./components/home/home.scss";
+@import "./components/navbar/navbar.scss";

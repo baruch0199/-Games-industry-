@@ -1,0 +1,124 @@
+.main-page-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  .create-products-wrapper {
+    display: flex;
+    justify-content: right;
+
+    margin: 50px 0;
+    margin-right: 40px;
+    .create-products {
+      @extend .shaddow, .button;
+      &:hover {
+        transform: rotateZ(0deg) scale(1.05);
+      }
+    }
+  }
+
+  .edit {
+    @extend .shaddow;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    border-radius: 5px;
+
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: clamp(200px, 80vw, 800px);
+    height: clamp(200px, 100vh, 400px);
+
+    .edit-content-wrapper {
+      width: 100%;
+      position: relative;
+      .edit-exit {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        background: transparent;
+        border: 0;
+        // display: inline-block;
+        .edit-exit-icon {
+          background-image: url("../../icons/close_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: contain;
+          height: 30px;
+          width: 30px;
+        }
+      }
+      .edit-text {
+        padding: 40px;
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+
+        .edit-title {
+          margin-bottom: 20px;
+        }
+        .edit-description {
+          margin-bottom: 20px;
+        }
+        .edit-title,
+        .edit-description,
+        .edit-published-date {
+          outline: none;
+          border: 0.5px solid rgb(90, 90, 90);
+          border-radius: 2px;
+          background-color: transparent;
+          color: rgb(207, 207, 207);
+          padding: 10px 10px;
+        }
+      }
+      .edit-save {
+        @extend .shaddow, .button;
+
+        margin-left: 38px;
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  .more-info {
+    @extend .shaddow;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    border-radius: 5px;
+
+    color: white;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: clamp(200px, 80vw, 800px);
+    height: clamp(200px, 100vh, 400px);
+
+    .more-info-content-wrapper {
+      width: 100%;
+      position: relative;
+      .more-info-exit {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        background: transparent;
+        border: 0;
+        // display: inline-block;
+        .more-info-exit-icon {
+          background-image: url("../../icons/close_FILL0_wght400_GRAD0_opsz48.svg");
+          background-size: contain;
+          height: 30px;
+          width: 30px;
+        }
+      }
+      .more-info-text {
+        padding: 40px;
+        padding-top: 60px;
+
+        .more-info-title {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

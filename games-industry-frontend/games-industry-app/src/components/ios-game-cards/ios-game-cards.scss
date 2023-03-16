@@ -1,0 +1,133 @@
+.ios-title-games {
+  color: white;
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: -25px;
+}
+
+.ios-section {
+  margin-bottom: 100px;
+  .ios-more-button {
+    display: block;
+    margin-bottom: 10px;
+    color: $azure;
+    margin-left: auto;
+    background-color: #373737;
+    padding: 5px 15px;
+    border: 0;
+  }
+
+  .ios-background {
+    position: relative;
+    background-image: $radialBlackAndWhiteBg;
+    width: 100%;
+    height: 198px;
+    display: flex;
+    padding: 30px;
+
+    .ios-bg-edit-delete-tools {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(255, 255, 255, 0.412);
+      height: 50px;
+      width: 100px;
+      border-radius: 30px 6px 30px 0;
+      border: 0.5px solid black;
+
+      .ios-edit-delete-tools {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .ios-edit {
+          background: transparent;
+          border: 0;
+        }
+
+        .ios-trash {
+          @extend .admin-trash;
+        }
+
+        .ios-pencil,
+        .ios-trash {
+          color: black;
+          margin: 0 5px;
+        }
+      }
+    }
+
+    .ios-image-wraper {
+      .ios-image {
+        width: 300px;
+        border-radius: 5px;
+      }
+
+      @media only screen and (max-width: 1301px) {
+        .ios-image {
+          width: 100%;
+          border-radius: 5px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .ios-wraper-text-button-price {
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px;
+
+      .ios-wraper-text {
+        height: 90px;
+        color: white;
+        overflow: hidden;
+
+        .ios-paragraph {
+          color: rgb(218, 218, 218);
+        }
+      }
+
+      .ios-button-and-price {
+        margin-top: 25px;
+      }
+
+      .ios-button {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 2px;
+        border: 0.5px solid white;
+        padding: 5px 18px;
+        padding-bottom: 6px;
+        transition: all 0.5s;
+
+        &:hover {
+          transform: rotateZ(2deg);
+        }
+
+        &:active {
+          @extend .active-button;
+        }
+      }
+
+      .ios-price {
+        color: white;
+        margin-left: 45px;
+      }
+    }
+
+    @media only screen and (max-width: 1301px) {
+      .ios-wraper-text-button-price {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1301px) {
+    .ios-background {
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+    }
+  }
+}

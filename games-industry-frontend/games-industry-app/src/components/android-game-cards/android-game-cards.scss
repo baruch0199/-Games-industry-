@@ -1,0 +1,242 @@
+//android
+.title-android-games {
+  color: white;
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.android-section {
+  .android-section-content {
+    width: 100%;
+    color: white;
+
+    .android-background {
+      @extend .shaddow;
+      @include position(absolute, 0, 0);
+      background-image: $radialBlackAndWhiteBg;
+      height: 50%;
+      width: inherit;
+      border-radius: 0px 90px 7px 7px;
+      display: flex;
+
+      .android-text-content {
+        position: absolute;
+        top: 12px;
+        left: 14px;
+        width: 83%;
+        line-height: 17px;
+      }
+
+      .android-text-title {
+        font-size: clamp(11px, 0.8vw, 20px);
+      }
+
+      .overflow {
+        height: 70px;
+        overflow: hidden;
+      }
+
+      .android-paragraph-content {
+        font-size: clamp(11px, 0.7vw, 15px);
+        color: rgb(224, 224, 224);
+        padding: 0 4px;
+        display: inline;
+        padding: 0;
+      }
+
+      .android-more-button {
+        text-decoration: none;
+        color: $azure;
+        margin-left: 7px;
+        font-size: 1rem;
+        background: transparent;
+        border: none;
+        .android-more {
+          border-bottom: 1px solid $azure;
+        }
+      }
+
+      .android-button {
+        @extend .button, .shaddow;
+        @include position(absolute, 15px, 14px);
+      }
+
+      .android-product-price {
+        @include position(absolute, 23px, 55%);
+      }
+    }
+
+    .android-content {
+      position: relative;
+      background-color: #191919;
+
+      .android-bg-edit-delete-tools {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.412);
+        height: 50px;
+        width: 100px;
+        border-radius: 30px 6px 30px 0;
+        border: 0.5px solid black;
+
+        .android-edit-delete-tools {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          .android-edit {
+            background: transparent;
+            border: 0;
+          }
+
+          .android-trash {
+            @extend .admin-trash;
+          }
+
+          .android-pencil,
+          .android-trash {
+            color: black;
+            padding: 9px;
+          }
+        }
+      }
+    }
+
+    .android-height {
+      height: clamp(25px, 22vw, 420px);
+    }
+
+    .android-height .img {
+      @extend .shaddow;
+    }
+
+    .android-image {
+      position: relative;
+      width: inherit;
+      border-radius: 7px 7px 0px 0px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  html {
+    .android-height {
+      height: clamp(25px, 21vw, 420px) !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 1301px) {
+  html {
+    font-size: 87.5%; // 1rem = 15px
+
+    .android-paragraph-content {
+      line-height: 20px;
+    }
+    .android-text-title {
+      font-size: clamp(14px, 0.8vw, 20px) !important;
+    }
+  }
+
+  .android-height {
+    height: clamp(25px, 33vw, 420px) !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .android-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .android-background {
+    height: 20vw !important;
+  }
+
+  .android-height {
+    height: 44vw !important;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .android-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .android-background {
+    height: 30vw !important;
+  }
+
+  .android-height {
+    height: 53vw !important;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .android-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .android-background {
+    height: 32vw !important;
+  }
+
+  .android-height {
+    height: 75vw !important;
+  }
+
+  .android-bg-edit-delete-tools {
+    .android-pencil,
+    .android-trash {
+    }
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .android-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .android-background {
+    height: 42vw !important;
+  }
+
+  .android-height {
+    height: 87vw !important;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 81.25%; // 1rem = 13px
+
+    .android-paragraph-content {
+      line-height: 16px;
+    }
+  }
+
+  .android-background {
+    height: 80vw !important;
+  }
+
+  .android-height {
+    height: 52vh !important;
+  }
+}

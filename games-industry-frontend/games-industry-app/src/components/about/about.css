@@ -1,0 +1,23 @@
+.about-section .about-background {
+  width: 100%;
+  height: 250px;
+  padding: 70px 50px;
+  margin-bottom: 120px !important;
+}
+
+.about-section .about-background .about-text {
+  text-align: center;
+  color: white;
+}
+
+.about-section .about-background .about-contact {
+  margin-top: 30px;
+}
+
+.about-section .about-background .about-contact .about-contact-city,
+.about-section .about-background .about-contact .about-contact-street,
+.about-section .about-background .about-contact .about-contact-email,
+.about-section .about-background .about-contact .about-contact-phone .about-contact-title {
+  display: block;
+}
+/*# sourceMappingURL=about.css.map */

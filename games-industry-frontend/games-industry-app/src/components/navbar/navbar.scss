@@ -1,0 +1,54 @@
+.transition {
+  transition: all 0.5s;
+}
+
+.navbar-position {
+  position: fixed !important;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-color {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-background-color {
+  background-color: inherit !important;
+  border: 0 !important;
+}
+
+.cart-link {
+  position: relative;
+  .products-counter-wrapper {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    background-color: #af642a79;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+
+    .products-counter {
+    }
+  }
+  .resize-cart-icon {
+    animation: resize 0.4s;
+    @keyframes resize {
+      0% {
+        transform: scale(1);
+      }
+      80% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.user-name {
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+}

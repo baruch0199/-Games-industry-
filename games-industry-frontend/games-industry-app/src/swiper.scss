@@ -1,0 +1,16 @@
+//swiper
+.swiper-button-next {
+  color: $azure !important;
+
+  &::after {
+    font-size: 15px !important;
+  }
+}
+
+.swiper-button-prev {
+  color: $azure !important;
+
+  &::after {
+    font-size: 15px !important;
+  }
+}
